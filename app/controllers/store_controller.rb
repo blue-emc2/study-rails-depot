@@ -14,6 +14,8 @@ class StoreController < ApplicationController
       puts "session counter increment"
       session[:counter] += 1
     end
+    
+    @cart = current_cart
 
   end
 end

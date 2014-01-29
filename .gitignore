@@ -16,3 +16,5 @@
 
 /vendor/bundle
 
+/app/.DS_Store
+/app/views/.DS_Store

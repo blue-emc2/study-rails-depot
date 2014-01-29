@@ -13,8 +13,11 @@
     <%= @page_title || "Pragmatic Bookshelf" %>
   </div>
   <div id="columns">
-
     <div id="side">
+      <div id="cart">
+        <%= render @cart %>
+      </div>
+
       <ul>
         <li><a href="http://www.google.co.jp">ホーム</a><li>
         <li><a href="http://www.bokete.jp">よくある質問</a><li>
