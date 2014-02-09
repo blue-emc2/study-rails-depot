@@ -48,7 +48,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       if @line_item.save
-        logger.debug "@@@ 1"
+#        logger.debug "@@@ 1"
         format.html { redirect_to store_url }
         format.js   { @current_item = @line_item }
         
@@ -62,7 +62,7 @@ class LineItemsController < ApplicationController
             status: :created,
             location: @line_item }
       else
-        logger.debug "@@@ 2"
+#        logger.debug "@@@ 2"
         format.html { render action: "new" }
         format.json { render json: @line_item.errors, status: :unprocessable_entity }
       end
